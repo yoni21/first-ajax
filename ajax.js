@@ -7,11 +7,11 @@ $(document).ready(function () {
       method: 'GET',
       data: {},
       dataType: 'text'
-    }).done(function(data){
-      console.log('response' + data);
+    }).done(function(responseData){
+      console.log('response' + responseData);
     });
   });
-  $('#step3456 button').on('click', function() {
+  $('#step3 button').on('click', function() {
     $.ajax({
       url: 'http://first-ajax-api.herokuapp.com/ping/pong',
       method: 'GET',
@@ -21,8 +21,8 @@ $(document).ready(function () {
       console.log('Ajax request succeeded!');
       $('#step3456').append(responseData);
     }).fail(function() {
-      $('#step3456').append('Error: try again!');
-      console.log('Ajax request failed!');
+      $('#step3456').append('sorry i try harser!');
+      console.log('hey the request is failed!');
     }).always(function() {
       console.log('Ajax request done!');
     });
@@ -33,9 +33,9 @@ $(document).ready(function () {
       url: 'http://first-ajax-api.herokuapp.com/count',
       method: 'GET',
       dataType: 'text'
-    }).done(function(responseData){
-        console.log(responseData);
-        $('#step7').append(responseData);
+    }).done(function(count){
+        console.log('next step please');
+        $('#step7').append(count);
     });
   });
   $('#step8 button').on('click', function() {
@@ -44,9 +44,9 @@ $(document).ready(function () {
       method: 'GET',
       data: { timezone:'Europe/Sofia'},
       dataType: 'text'
-    }).done(function(responseData) {
-      console.log(responseData);
-      $('#step8').append(responseData);
+    }).done(function(time) {
+      console.log('is this the last step?');
+      $('#step8').append(time);
     });
   });
 
@@ -55,9 +55,8 @@ $(document).ready(function () {
       url: 'http://first-ajax-api.herokuapp.com/a_car',
       method: 'GET',
       dataType: 'html'
-    }).done(function(responseData) {
-      console.log(responseData);
-      $('#step9').append(responseData);
+    }).done(function(a_car) {
+      $('#list').append(a_car);
   });
 
  });
