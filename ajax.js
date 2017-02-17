@@ -21,7 +21,7 @@ $(document).ready(function () {
       console.log('Ajax request succeeded!');
       $('#step3456').append(responseData);
     }).fail(function() {
-      $('#step3456').append('sorry i try harser!');
+      $('#step3456').append('sorry i try harder!');
       console.log('hey the request is failed!');
     }).always(function() {
       console.log('Ajax request done!');
