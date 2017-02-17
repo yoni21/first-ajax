@@ -1,5 +1,5 @@
 # Your First (Several) Asynchronous Requests
-Your First (Several) Asynchronous Requests: ANSWERS AND NOTES
+Your First (Several) Asynchronous Requests: 
 
 Step 0
 
