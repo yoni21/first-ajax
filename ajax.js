@@ -11,9 +11,9 @@ $(document).ready(function () {
       console.log('response' + responseData);
     });
   });
-  $('#step3 button').on('click', function() {
+  $('#step3456 button').on('click', function() {
     $.ajax({
-      url: 'http://first-ajax-api.herokuapp.com/ping/pong',
+      url: 'http://first-ajax-api.herokuapp.com/ping',
       method: 'GET',
       dataType: 'text'
     }).done(function(responseData) {
@@ -55,8 +55,8 @@ $(document).ready(function () {
       url: 'http://first-ajax-api.herokuapp.com/a_car',
       method: 'GET',
       dataType: 'html'
-    }).done(function(a_car) {
-      $('#list').append(a_car);
+    }).done(function(acarData) {
+      $('#list').append(acarData);
   });
 
  });
